@@ -1,4 +1,4 @@
-
+//finding factorial of any number
 import java.util.*;
 
 public class factorial {

@@ -1,3 +1,4 @@
+// programtoprintthemultiplicationtableofanumberN
 import java.util.*;
 
 public class multiplication {
