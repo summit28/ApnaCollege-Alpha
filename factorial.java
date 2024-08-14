@@ -16,4 +16,4 @@ public class factorial {
         System.out.println("Factoral:" + fact);
         sc.close();
     }
-}
+} 
