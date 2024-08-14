@@ -1,7 +1,7 @@
 //finding factorial of any number
 import java.util.*;
 
-public class factorial {
+public class factorials {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
