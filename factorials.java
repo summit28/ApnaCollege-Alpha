@@ -6,7 +6,7 @@ public class factorials {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int num;//to hold number
-        int fact = 1;//to hold
+        int fact = 1;//to hold factorial
 
         System.out.print("Enter any positive number : ");
         num = sc.nextInt();
