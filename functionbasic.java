@@ -45,6 +45,8 @@ public class functionbasic {
         int q = 4;
         int prod = multiply(p, q);
         System.out.println("p * q = " + prod);
+        prod = multiply(10, 10);
+        System.out.println("p * q = " + prod);
         sc.close();
     }
 }
