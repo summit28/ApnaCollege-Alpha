@@ -1,3 +1,4 @@
+
 import java.util.*;
 
 public class functionbasic {
@@ -19,6 +20,11 @@ public class functionbasic {
         System.out.println("d is " + d);
     }
 
+    public static int multiply(int p, int q) {
+        int product = p * q;
+        return product;
+    }
+
     public static void main(String[] args) {
         printhelloworld(); //function call
         Scanner sc = new Scanner(System.in);
@@ -34,6 +40,11 @@ public class functionbasic {
         // System.out.println("c is "+ c);
         // System.out.println("d is "+ d);
 
+        //product of p and r 
+        int p = 3;
+        int q = 4;
+        int prod = multiply(p, q);
+        System.out.println("p * q = " + prod);
         sc.close();
     }
 }
