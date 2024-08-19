@@ -33,6 +33,14 @@ public class functionbasic {
         return f;
     }
 
+    public static int binCoff(int n, int r){
+        int fact_n = factorial(n);
+        int fact_r = factorial(r);
+        int fact_nmr = factorial(n-r);
+        int binCoff = fact_n / (fact_r * fact_nmr);
+        return binCoff;
+    }
+
     public static void main(String[] args) {
         printhelloworld(); //function call
         Scanner sc = new Scanner(System.in);
@@ -58,6 +66,9 @@ public class functionbasic {
 
         //finding factorial
         System.out.println("Factoiral is : " + factorial(7));
+
+        //finding binomial coefficent
+        System.out.println("Binomial Coefficent is : " + binCoff(4, 2));
         sc.close();
 
     }
