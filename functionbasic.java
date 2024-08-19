@@ -25,6 +25,14 @@ public class functionbasic {
         return product;
     }
 
+    public static int factorial(int n) {
+        int f = 1;
+        for (int i = 1; i <= n; i++) {
+            f = f * i;
+        }
+        return f;
+    }
+
     public static void main(String[] args) {
         printhelloworld(); //function call
         Scanner sc = new Scanner(System.in);
@@ -47,6 +55,10 @@ public class functionbasic {
         System.out.println("p * q = " + prod);
         prod = multiply(10, 10);
         System.out.println("p * q = " + prod);
+
+        //finding factorial
+        System.out.println("Factoiral is : " + factorial(7));
         sc.close();
+
     }
 }
