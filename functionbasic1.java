@@ -1,17 +1,25 @@
 
 public class functionbasic1 {
 
-    public static boolean isPrime(int n){
-        if(n == 2){
-            return  true;
+    public static boolean isPrime(int n) {
+        if (n == 2) {
+            return true;
         }
 
-        for(int i = 2; i <= n-1; i++){
-            if(n % i == 0){
+        for (int i = 2; i <= n - 1; i++) {
+            if (n % i == 0) {
                 return false;
             }
         }
         return true;
+    }
+
+    public static int sum(int a, int b) {
+        return a + b;
+    }
+
+    public static int sum(int a, int b, int c) {
+        return a + b + c;
     }
 
     public static void main(String[] args) {
@@ -21,5 +29,10 @@ public class functionbasic1 {
 
         //check if a number is prime or not 
         System.out.println(isPrime(5));
+
+        //function overloading using parameters
+        System.out.println(sum(2, 3));
+        System.out.println(sum(1, 2, 3));
+
     }
 }
