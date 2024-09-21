@@ -1,6 +1,8 @@
 
 public class functionbasic1 {
 
+    //check if a number is prime or not
+    //only for n>=2
     public static boolean isPrime(int n) {
         if (n == 2) {
             return true;
@@ -22,6 +24,7 @@ public class functionbasic1 {
         return a + b + c;
     }
 
+    //check if a number is prime or not
     public static void main(String[] args) {
         //find square root using inbuilt method in java
         // int a = 12;
