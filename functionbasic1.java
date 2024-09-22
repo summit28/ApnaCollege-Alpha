@@ -17,14 +17,31 @@ public class functionbasic1 {
     }
 
     //prime in range
-    public static void primesinrange(int n){
-        for(int i = 2; i <= n; i++){
-            if(isPrime(i)){//true
+    public static void primesinrange(int n) {
+        for (int i = 2; i <= n; i++) {
+            if (isPrime(i)) {//true
                 System.out.print(i + " ");
             }
         }
         System.out.println(" ");
     }
+
+    //Binary to Decimal Conversion
+    public static void binTodec(int binNum){
+        int mynum = binNum;
+        int pow = 0; 
+        int decNum = 0;
+
+        while (binNum > 0) {
+            int lastdigit = binNum % 10;
+            decNum = decNum + (lastdigit * (int)Math.pow(2, pow));
+
+            pow++;
+            binNum = binNum/10;
+        }
+        System.out.println("decimal of " + mynum + " = " + decNum);
+    }
+
 
     public static int sum(int a, int b) {
         return a + b;
@@ -45,6 +62,9 @@ public class functionbasic1 {
 
         //prime in range
         primesinrange(100);
+
+        //binary to decimal conversion
+        binTodec(1010);
 
         //function overloading using parameters
         System.out.println(sum(2, 3));
