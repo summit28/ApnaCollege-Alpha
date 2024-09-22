@@ -16,6 +16,16 @@ public class functionbasic1 {
         return true;
     }
 
+    //prime in range
+    public static void primesinrange(int n){
+        for(int i = 2; i <= n; i++){
+            if(isPrime(i)){//true
+                System.out.print(i + " ");
+            }
+        }
+        System.out.println(" ");
+    }
+
     public static int sum(int a, int b) {
         return a + b;
     }
@@ -32,6 +42,9 @@ public class functionbasic1 {
 
         //check if a number is prime or not 
         System.out.println(isPrime(16));
+
+        //prime in range
+        primesinrange(100);
 
         //function overloading using parameters
         System.out.println(sum(2, 3));
