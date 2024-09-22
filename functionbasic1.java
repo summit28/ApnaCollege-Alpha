@@ -8,7 +8,7 @@ public class functionbasic1 {
             return true;
         }
 
-        for (int i = 2; i <= n - 1; i++) {
+        for (int i = 2; i <= Math.sqrt(n); i++) { //optmised way to check a number is prime or not
             if (n % i == 0) {
                 return false;
             }
@@ -31,7 +31,7 @@ public class functionbasic1 {
         // System.out.println("square of a is : " + Math.sqrt(a));
 
         //check if a number is prime or not 
-        System.out.println(isPrime(5));
+        System.out.println(isPrime(16));
 
         //function overloading using parameters
         System.out.println(sum(2, 3));
